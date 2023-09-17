@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;  
+}
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+ul li{
+    padding-top: 5px;
+    padding-right: 9px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding: 5px 9px 4px 10px;
+    padding: 5px 10px;
+    padding: 5px 10px 4px;
+    margin: 5px 10px 4px;
+}
+.header__logo-img{
+    max-height: 80px;
+}
+ul.header__menu__list li a{
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-transform: lowercase;
+   text-transform: capitalize;
+}
+ul.header__menu__list li a:hover{
+    color: red;
+    font-weight: 900;
+}
+main.main{
+    background: lightgrey;
+}
+header, main, footer{
+    padding: 20px 30px;
+    margin: 20px 30px;
+}
+.main__section_flex_items{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 25px;
+    justify-content: space-between; 
+}
+.main__section_flex_items>div{
+    width: calc(90%/2 - 15px);
+    flex: 0 0 calc(90%/2 - 15px);
+    text-align: center;
+    padding: 40px;
+    background: white;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__section_flex_items>div:hover{
+    background: yellow;
+}
+.main__section_flex_items .flex-10{
+    width: 10%;
+    flex: 0 0 10%;
+}
+.main__section_grid_items{
+    display: grid;
+    grid-template: "grid grid grid" 150px;
+    grid-gap: 15px;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+.main__section__grid-item{
+    min-height: 150px;
+    background: red;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    line-height: 120px;
+}
+.main__section_block_items{
+    display: block;
+    min-height: 350px;
+}
+.main__section__block_item{
+    display: inline-block;
+    float: left;
+    width: calc(25% - 20px);
+    min-height: 150px;
+    margin-bottom: 15px;
+    background: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+}
